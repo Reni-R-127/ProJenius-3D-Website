@@ -42,7 +42,11 @@ export default function Navbar({ route }) {
 
         {/* LOGO */}
         <a href="#/" className="logo">
-          <span className="logo-mark">3D</span>
+          <img
+            src={logo}
+            alt="ProJenius 3D Print"
+            className="logo-image"
+          />
 
           <span className="logo-text">
             <strong>ProJenius</strong>

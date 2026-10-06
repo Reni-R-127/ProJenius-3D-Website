@@ -24,16 +24,54 @@ nav.sc .w {
   align-items: center;
   gap: 10px;
 }
-.logo i {
-  width: 26px;
-  height: 26px;
-  border: 2px solid var(--acc);
-  display: grid;
-  place-items: center;
-  font-style: normal;
-  font-size: 0.7rem;
-  color: var(--acc);
-  border-radius: 4px;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo-image {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1;
+}
+
+.logo-text strong {
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.logo-text small {
+  margin-top: 4px;
+  color: var(--mut);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+nav.sc .logo-image {
+  width: 36px;
+  height: 36px;
+}
+
+nav.sc .logo-text strong {
+  font-size: 0.9rem;
+}
+
+nav.sc .logo-text small {
+  font-size: 0.52rem;
 }
 .logo span {
   color: var(--acc);
