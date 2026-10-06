@@ -1,0 +1,129 @@
+form {
+  display: grid;
+  gap: 16px;
+}
+.fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: grid;
+  gap: 6px;
+}
+input,
+select,
+textarea {
+  font: inherit;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 12px 14px;
+  min-height: 46px;
+  width: 100%;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--acc);
+  outline-offset: -1px;
+}
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+input[type="file"] {
+  padding: 10px;
+}
+.fc {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 32px;
+}
+.ok {
+  text-align: center;
+  padding: 30px 10px;
+}
+.ok b {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: var(--acc);
+}
+.note {
+  font-size: 0.85rem;
+  color: var(--mut);
+  border-left: 3px solid var(--acc);
+  padding: 4px 0 4px 12px;
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(10, 12, 15, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+.modal.open {
+  display: flex;
+}
+.mb {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  max-width: 520px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: auto;
+  padding: 30px;
+  animation: up 0.3s;
+}
+.mb h2 {
+  margin-bottom: 6px;
+}
+.opt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: var(--ink);
+  font: inherit;
+  min-height: 56px;
+  transition: 0.2s;
+}
+.opt:hover {
+  border-color: var(--acc);
+  transform: translateX(3px);
+}
+.opt small {
+  display: block;
+  color: var(--mut);
+  font-size: 0.82rem;
+}
+.x {
+  float: right;
+  background: none;
+  border: 0;
+  font-size: 1.5rem;
+  color: var(--mut);
+  cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
+}
+.ok p {
+  color: var(--mut);
+}

@@ -1,0 +1,113 @@
+.hero {
+  position: relative;
+  padding: 72px 0 88px;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+.hg {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+.hero p.lead {
+  margin: 22px 0 32px;
+}
+.cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.hv {
+  position: relative;
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.25);
+}
+.tag {
+  position: absolute;
+  font:
+    500 0.72rem ui-monospace,
+    Menlo,
+    monospace;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  padding: 6px 10px;
+  border-radius: 4px;
+  color: var(--mut);
+}
+.sc3 {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  perspective: 900px;
+  --u: clamp(100px, 15vw, 170px);
+  overflow: hidden;
+}
+.ob {
+  position: relative;
+  width: var(--u);
+  height: var(--u);
+  transform-style: preserve-3d;
+  transform: rotateX(-24deg) rotateY(0);
+  animation: spin 14s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotateX(-24deg) rotateY(360deg);
+  }
+}
+.ly {
+  position: absolute;
+  inset: 0;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.28);
+  background: hsl(22 88% calc(32% + var(--i) * 2%));
+  transform: rotateX(90deg) translateZ(calc((var(--i) - 9) * var(--u) / 10));
+  animation: bld 7s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.16s);
+}
+@keyframes bld {
+  0% {
+    opacity: 0;
+  }
+  10%,
+  82% {
+    opacity: 1;
+  }
+  94%,
+  100% {
+    opacity: 0;
+  }
+}
+.bed {
+  position: absolute;
+  inset: -30%;
+  border: 1px solid var(--line);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 20px 20px;
+  transform: rotateX(90deg) translateZ(calc(var(--u) * -0.98));
+}
+.tag.tl {
+  top: 16px;
+  left: 16px;
+}
+.tag.bl {
+  bottom: 16px;
+  left: 16px;
+}
+.tag.br {
+  bottom: 16px;
+  right: 16px;
+}
+.hero h1 {
+  font-size: clamp(2.2rem, 5.5vw, 4rem);
+}

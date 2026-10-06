@@ -1,0 +1,143 @@
+.ph {
+  padding: 64px 0 40px;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 44px 44px;
+  border-bottom: 1px solid var(--line);
+}
+.lay {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.flt {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.flt button {
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--mut);
+  padding: 8px 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.88rem;
+  min-height: 40px;
+}
+.flt button.on,
+.flt button:hover {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+.mas {
+  columns: 3;
+  column-gap: 20px;
+}
+.mas .pc {
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
+.rate {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--mut);
+}
+.price {
+  font-weight: 650;
+  font-size: 0.9rem;
+}
+.fh {
+  margin-bottom: 18px;
+}
+.stack {
+  display: grid;
+  gap: 20px;
+}
+.mut {
+  color: var(--mut);
+}
+.mt {
+  margin-top: 36px;
+}
+.ctr {
+  justify-content: center;
+}
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.back {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.sbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 56px;
+}
+.row2 {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+.drow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 22px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.92rem;
+}
+.drow span {
+  color: var(--mut);
+}
+.pad0 {
+  padding: 0;
+}
+.full {
+  width: 100%;
+  margin-top: 12px;
+}
+.mt2 {
+  margin-top: 20px;
+}
+.mb2 {
+  margin-bottom: 22px;
+}
+.mname {
+  font-size: 1.3rem;
+  margin: 4px 0 18px;
+}
+.big3 {
+  font-size: 1.3rem;
+}
+.dh {
+  font-size: 2.4rem;
+  margin: 8px 0;
+}
+.top {
+  align-items: start;
+}
+.narrow {
+  max-width: 720px;
+}
+.spec .note {
+  margin-top: 14px;
+}
+.ph h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+}
